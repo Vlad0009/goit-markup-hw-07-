@@ -1,8 +1,14 @@
 .section-feature__list {
-    display: flex;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-top: 0px;
     padding-bottom: 0px;
     gap: 30px;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .section-feature__item {
