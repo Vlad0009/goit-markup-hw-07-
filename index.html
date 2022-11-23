@@ -16,19 +16,27 @@
 
   </head>
   <body>
-    <!-- Шапка сайту-->
+    <!-- Шапка сайту-->   
     <header class="page-header">
         <div class="container header-div">
-            <button class="page-header__burger">
-                <svg width="40" height="40">
-                    <use href="./images/burger-menu.svg"
-                </svg>
-            </button>
+            
             <nav class="page-header__nav">
                 <a href="./index.html" class="logo">
                     <span class="page__ingredient">Web</span><span class="studio-header">Studio</span>
                 </a>
-                <ul class="site-nav list">
+                <button type="button" class="button__burger is-open" aria-controls="menu-container" aria-expanded="false" js-menu-container>
+                <svg class="" width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="icon-menu" href="./images/mobile_burger.svg#icon-menu_24px"></use>
+                    <use class="icon-cross" href="./images/mobile_burger.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+            <div class="menu-container is-open" id="menu-container" js-open-menu>
+                Меню
+                
+            </div>
+        </nav>
+                <div>
+                    <ul class="site-nav list">
                     <li class="site-nav__item">
                         <a href="./index.html" class="site-nav__title site-nav__title--current">Студія</a>
                     </li>
@@ -40,9 +48,10 @@
                     </li>
                     
                 </ul>
-            </nav>
+                </div>
+            
             <ul class="site-contacts list">
-                <li class="site-contacts__list ">
+                <li class="site-contacts__list">
                     <a href="mailto:info@devstudio.com" class="site-contacts__contact">
                         <svg class="envelope" width="16px" height="12px">
                             <use href="./images/symbol-defs1.svg#icon-envelope"></use></svg>

@@ -2,9 +2,16 @@
     padding-top: 0;
 }
 
+
+.section-projects {
+    @media screen and (max-width:1148px) {
+            display: none;
+        }
+}
 .section-projects__list {
     display: flex;
     position: relative;
+
 }
 
 .section-projects__label {
