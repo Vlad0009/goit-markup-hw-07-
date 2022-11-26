@@ -1,7 +1,12 @@
 .header-div {
     display: flex;
     align-items: center;
+    max-width: 780px;
     
+
+    @media screen and (max-width: 767px) {
+        height: 60px;
+    }
 }
 
 .page-header {
@@ -12,6 +17,8 @@ position: relative;
     &__nav {
         display: flex;
         align-items: center;
+        right: 0;
+        justify-content: space-between;
     }
 }
 
@@ -25,10 +32,11 @@ position: relative;
 
 .site-nav {
     margin-left: 94px;
-    display: flex;
+    display: none;
 
-    @media (max-width: 480px) {
-            display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+            margin-left: 88px;
         }
 }
 

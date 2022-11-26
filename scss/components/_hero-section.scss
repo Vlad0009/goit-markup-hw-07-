@@ -4,6 +4,7 @@
     padding: 200px 0;
     max-height: 600px;
     max-width: 1600px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -19,15 +20,21 @@
     }
 
     &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/img.jpg);
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         max-width: 1600px;
         height: 600px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: auto;
         background-repeat: no-repeat;
+        padding: 0;
     }
 }
 
@@ -46,7 +53,10 @@
     margin-left: auto;
     margin-right: auto;
 
-
+@media screen and (max-width: 1147px) {
+    font-size: 28px;
+    width: 360px;
+}
     &--hidden {
         position: absolute;
         white-space: nowrap;

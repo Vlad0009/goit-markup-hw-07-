@@ -3,10 +3,12 @@
     background-color: var(--primary-bcg-hero);
     padding: 60px 0;
     margin-top: 94px;
+    width: 100%;
 
-    @media screen and (min-width:1148px) {
+    @media screen and (max-width:1147px) {
         flex-direction: column;
         flex-wrap: wrap;
+        margin-top: 0px;
     }
 
 
@@ -34,6 +36,26 @@
 .footer-container {
     display: flex;
     align-items: baseline;
+    
+    @media screen and (max-width: 1147px) {
+            flex-direction: wrap;
+        }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+    
+}
+.footer-container__wrap, .site-contacts__contact, .page-footer__socials {
+text-align: none;
+
+@media screen and (max-width: 1147px) {
+    text-align: center;
+}
+}
+
+.subscription {
+
 }
 
 .studio-footer {
@@ -59,6 +81,12 @@
     align-items: baseline;
     margin-left: 70px;
     margin-top: 0px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-left: 0;
+        justify-content: center;
+    }
 }
 
 .footer-social__label {
@@ -120,20 +148,44 @@
     border-radius: 4px;
     font-size: 16px;
     line-height: 30px;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 1147px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+        @media screen and (max-width: 767px) {
+            width: 450px;
+            margin-bottom: 20px;
+            
+        }
 }
 
 .spam-container {
-    display: bl;
+    
     align-items: baseline;
     margin-left: 93px;
     margin-top: 0px;
 
+@media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-left: auto;
+        
+    }
 
     &__box {
         list-style: none;
         display: flex;
         padding: 0 0 0 0;
         margin-bottom: 0;
+
+        @media screen and (max-width: 1147px) {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+              
     }
 
     &__title {
@@ -144,5 +196,9 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            
+        }
     }
 }
