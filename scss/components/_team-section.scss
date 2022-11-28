@@ -1,5 +1,5 @@
 .section-team {
-
+min-width: 480px;
     &__background {
         background-color: var(--primary-background-color);
         padding-top: 33px;
@@ -14,7 +14,8 @@
     &__list {
         display: flex;
         gap: 30px;
-        
+        justify-content: center;
+        width: 100%;
 
         @media screen and (max-width:1148px) {
                 flex-wrap: wrap;

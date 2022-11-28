@@ -1,18 +1,24 @@
+.section-clients {
+    min-width: 480px;
+}
+
 .section-clients__list {
     display: flex;
     padding-left: 0px;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 1170px;
+    min-width: 480px;
 
-    @media screen and (max-width:1148px) {
+    @media screen and (max-width:1147px) {
             flex-wrap: wrap;
-    min-width: 768px;
+            justify-content: center;
         }
 
                  @media screen and (max-width:767px) {
                      flex-wrap: wrap;
-                     min-width: 480px;
+                     justify-content: center;
+                    
                  }
     }
 
@@ -70,8 +76,10 @@
 }
 
 .section-clients__title {
-    width: 450px;
+    
     font-size: 36px;
+    min-width: 480px;
+
     @media screen and (max-width: 1147px) {
             width: 768px;
             font-size: 28px;

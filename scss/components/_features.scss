@@ -4,10 +4,10 @@
     padding-bottom: 0px;
     gap: 30px;
     max-width: 1170px;
+    min-width: 480px;
 
     @media screen and (max-width: 1147px) {
         flex-wrap: wrap;
-        margin: 15px;
         justify-content: center;
         
     }
@@ -15,7 +15,8 @@
             flex-wrap: wrap;
             margin: 15px;
             justify-content: center;
-            min-width: 480px;
+            margin-left: 0;
+            padding-left: 0;
         }
 }
 
@@ -49,11 +50,11 @@
     width: 270px;
 
     @media screen and (max-width: 1147px) {
-        min-width: 354px;
+        width: 354px;
 
     }
          @media screen and (max-width: 767px) {
-             min-width: 450px;
+             max-width: 450px;
          }
 
     &::before {
@@ -62,18 +63,54 @@
         height: 120px;
         background-size: contain;
         margin-bottom: 30px;
-        background-color: var(--header-bkg-title);
-        background-repeat: no-repeat;
-        background-position: center;
+        
+            
     }
 }
 
-@each $sense in antenna, clock, monitor, spaceman {
-    .ftr-#{$sense}::before {
-        // background-image: url(../images/$sense.svg);
-        background-size: auto;
-    }
+.ftr-antenna {
+    background-image: url('/images/antenna.svg');
+    background-size: auto;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header-bkg-title);
+    margin-bottom: 120px;
 }
+.ftr-clock {
+    background-image: url('/images/clock.svg');
+    background-size: auto;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header-bkg-title);
+    margin-bottom: 120px;
+}
+.ftr-monitor {
+    background-image: url('/images/monitor.svg');
+    background-size: auto;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header-bkg-title);
+    margin-bottom: 120px;
+}
+.ftr-spaceman {
+    background-image: url('/images/spaceman.svg');
+    background-size: auto;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header-bkg-title);
+    margin-bottom: 120px;
+}
+
+// @each $sense in antenna, clock, monitor, spaceman {
+//     .ftr-#{$sense}::before {
+//         background-image: url('/images/$sense.svg');
+//        background-size: auto;
+//     }
+// }
 
 // .ftr-antenna::before {
 //     background-image: url(../images/antenna.svg);
