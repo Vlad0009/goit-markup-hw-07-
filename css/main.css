@@ -287,7 +287,6 @@ button {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  margin-top: 20px;
 }
 @media screen and (max-width: 1147px) {
   .button__footer {
@@ -827,7 +826,7 @@ button {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1147px) {
   .footer-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -886,11 +885,6 @@ button {
 
 .footer-adres__style {
   margin-top: 20px;
-}
-@media screen and (max-width: 1147px) {
-  .footer-adres__style {
-    text-align: center;
-  }
 }
 
 .social-container {
@@ -1025,6 +1019,7 @@ button {
 }
 
 .spam-container {
+  margin-left: 93px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -1039,7 +1034,7 @@ button {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1147px) {
   .spam-container {
     margin-left: 0;
     text-align: center;
@@ -1072,6 +1067,7 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+
 .header-div {
   -webkit-box-align: center;
       -ms-flex-align: center;

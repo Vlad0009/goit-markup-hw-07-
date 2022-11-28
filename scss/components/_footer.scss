@@ -44,7 +44,7 @@
     display: flex;
     align-items: baseline;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1147px) {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -93,10 +93,7 @@ justify-content: center;
 
 .footer-adres__style {
     margin-top: 20px;
-    @media screen and (max-width: 1147px) {
-            text-align: center;
-            
-        }
+    
 }
 
 .social-container {
@@ -218,9 +215,9 @@ justify-content: center;
 }
 
 .spam-container {
-    
+    margin-left: 93px;
     align-items: baseline;
-    // margin-left: 93px;
+    
     margin-top: 0px;
     width: 100%;
 
@@ -231,7 +228,7 @@ justify-content: center;
         text-align: center;
         
     }
-         @media screen and (min-width: 768px) {
+         @media screen and (max-width: 1147px) {
             margin-left: 0;
             text-align: center;
             margin-top: 60px;
@@ -261,9 +258,6 @@ justify-content: center;
         letter-spacing: 0.03em;
         margin-bottom: 20px;
 
-        @media screen and (min-width: 768px) {
-                
         
-            }
     }
 }
