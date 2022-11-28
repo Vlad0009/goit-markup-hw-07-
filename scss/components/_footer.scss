@@ -4,11 +4,12 @@
     padding: 60px 0;
     margin-top: 94px;
     width: 100%;
-min-width: 480px;
+// min-width: 480px;
     @media screen and (max-width:1147px) {
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 0px;
+        
     }
 
 
@@ -18,6 +19,8 @@ min-width: 480px;
         display: flex;
         flex-direction: column;
         gap: 9px;
+        
+        
     }
 
     &__socials {
@@ -66,9 +69,8 @@ justify-content: center;
     width: 100%;
 }
 }
-.footer-container__wrap, 
-.page-footer__contacts {
-
+.footer-container__wrap {
+    gap: 165px;
 }
 
 .subscription {
@@ -91,6 +93,10 @@ justify-content: center;
 
 .footer-adres__style {
     margin-top: 20px;
+    @media screen and (max-width: 1147px) {
+            text-align: center;
+            
+        }
 }
 
 .social-container {
@@ -106,6 +112,13 @@ justify-content: center;
         width: 100%;
 
     }
+
+        @media screen and (max-width: 1147px) {
+            
+            justify-content: center;
+            
+    
+        }
 }
 
 .footer-social__label {
@@ -158,11 +171,22 @@ justify-content: center;
 
 .email__box {
     margin-right: 12px;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 0px;
+        
+    }
+
+        @media screen and (max-width: 1147px) {
+            margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+        }
 }
 
 .footer-form {
     display: flex;
-    width: 358px;
+    width: 100%;
     height: 50px;
     left: 815px;
     margin-top: 0px;
@@ -182,10 +206,12 @@ justify-content: center;
         margin-bottom: 20px;
         justify-content: center;
         
+        
     }
         @media screen and (max-width: 767px) {
             max-width: 450px;
             margin-bottom: 20px;
+           
          }
 
                 
@@ -194,17 +220,21 @@ justify-content: center;
 .spam-container {
     
     align-items: baseline;
-    margin-left: 93px;
+    // margin-left: 93px;
     margin-top: 0px;
+    width: 100%;
 
 @media screen and (max-width: 767px) {
         margin-top: 60px;
         margin-left: auto;
+        margin-right: auto;
         text-align: center;
         
     }
          @media screen and (min-width: 768px) {
             margin-left: 0;
+            text-align: center;
+            margin-top: 60px;
           }
  
 
@@ -232,7 +262,7 @@ justify-content: center;
         margin-bottom: 20px;
 
         @media screen and (min-width: 768px) {
-                margin-left: 73px;
+                
         
             }
     }

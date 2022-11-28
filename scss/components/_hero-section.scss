@@ -4,12 +4,14 @@
     padding: 200px 0;
     max-height: 600px;
     max-width: 1600px;
-    min-width: 480px;
+    // min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
 
-    
+    @media screen and (max-width: 767px) {
+        max-height: 400px;
+    }
 
     &__container {
         margin-left: auto;
@@ -30,6 +32,8 @@
         background-size: cover;
         background-position: center;
         max-width: 1600px;
+        // padding-top: 118px;
+        // padding-bottom: 118px;
         height: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -50,13 +54,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-button-text);
-    width: 700px;
+    // width: 700px;
     margin-left: auto;
     margin-right: auto;
 
 @media screen and (max-width: 1147px) {
     font-size: 28px;
-    width: 360px;
+    // width: 360px;
 }
     &--hidden {
         position: absolute;

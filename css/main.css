@@ -203,12 +203,17 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 23px;
+  margin: 8px;
   padding: 0;
   right: 0;
   top: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .button__burger {
+    display: none;
+  }
 }
 .button__burger:hover, .button__burger:focus {
   fill: var(--primary-title-color);
@@ -282,10 +287,11 @@ button {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+  margin-top: 20px;
 }
 @media screen and (max-width: 1147px) {
   .button__footer {
-    margin-left: 80px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -297,7 +303,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 124px;
@@ -331,13 +337,20 @@ button {
   pointer-events: none;
 }
 .page-backdrop__announce {
+  position: absolute;
   margin-left: 36px;
   letter-spacing: 0.03em;
   font-size: 14px;
+  margin-top: -8px;
 }
 @media screen and (max-width: 1147px) {
   .page-backdrop__announce {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1147px) {
+  .page-backdrop__announce {
+    width: 100%;
   }
 }
 .page-backdrop__field {
@@ -466,6 +479,7 @@ button {
   background-color: var(--primary-background-color);
   top: 5px;
   margin-left: 12px;
+  margin-top: -8px;
   padding: 0;
   fill: var(--primary-button-text);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -520,7 +534,6 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
   height: 581px;
   background-color: var(--primary-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -529,13 +542,15 @@ button {
 }
 @media screen and (max-width: 1147px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
 }
-
-.section-clients {
-  min-width: 480px;
+@media screen and (min-width: 1148px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .section-clients__list {
@@ -545,8 +560,6 @@ button {
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1170px;
-  min-width: 480px;
 }
 @media screen and (max-width: 1147px) {
   .section-clients__list {
@@ -564,6 +577,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -591,27 +605,18 @@ button {
 }
 
 .section-clients__item {
-  display: inline-block;
+  list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  content: "";
   width: 167px;
   height: 92px;
-  background-size: contain;
   margin-left: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .section-clients__item:not(:last-child) {
   margin-right: 30px;
 }
 @media screen and (max-width: 1147px) {
-  .section-clients__item:not(:last-child) {
-    margin-right: 15px;
-  }
-}
-@media screen and (max-width: 767px) {
   .section-clients__item:not(:last-child) {
     margin-right: 15px;
   }
@@ -653,7 +658,6 @@ button {
   padding-bottom: 0px;
   gap: 30px;
   max-width: 1170px;
-  min-width: 480px;
 }
 @media screen and (max-width: 1147px) {
   .section-feature__list {
@@ -668,7 +672,6 @@ button {
   .section-feature__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -771,7 +774,6 @@ button {
   padding: 60px 0;
   margin-top: 94px;
   width: 100%;
-  min-width: 480px;
 }
 @media screen and (max-width: 1147px) {
   .page-footer {
@@ -864,6 +866,10 @@ button {
   }
 }
 
+.footer-container__wrap {
+  gap: 165px;
+}
+
 .studio-footer {
   color: var(--primary-background-color);
 }
@@ -881,6 +887,11 @@ button {
 .footer-adres__style {
   margin-top: 20px;
 }
+@media screen and (max-width: 1147px) {
+  .footer-adres__style {
+    text-align: center;
+  }
+}
 
 .social-container {
   -webkit-box-align: baseline;
@@ -897,6 +908,13 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+}
+@media screen and (max-width: 1147px) {
+  .social-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -957,12 +975,24 @@ button {
 .email__box {
   margin-right: 12px;
 }
+@media screen and (max-width: 767px) {
+  .email__box {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1147px) {
+  .email__box {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+}
 
 .footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 358px;
+  width: 100%;
   height: 50px;
   left: 815px;
   margin-top: 0px;
@@ -998,19 +1028,22 @@ button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-left: 93px;
   margin-top: 0px;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .spam-container {
     margin-top: 60px;
     margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .spam-container {
     margin-left: 0;
+    text-align: center;
+    margin-top: 60px;
   }
 }
 .spam-container__box {
@@ -1039,12 +1072,6 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
-  .spam-container__title {
-    margin-left: 73px;
-  }
-}
-
 .header-div {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1052,7 +1079,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 480px;
 }
 @media screen and (max-width: 767px) {
   .header-div {
@@ -1202,10 +1228,14 @@ button {
   padding: 200px 0;
   max-height: 600px;
   max-width: 1600px;
-  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    max-height: 400px;
+  }
 }
 .hero__container {
   margin-left: auto;
@@ -1248,14 +1278,12 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-button-text);
-  width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 1147px) {
   .hero__title {
     font-size: 28px;
-    width: 360px;
   }
 }
 .hero__title--hidden {
@@ -1325,7 +1353,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 48px 40px 40px 40px;
+  padding-top: 16px;
 }
 
 .menu-nav__list {
@@ -1334,11 +1362,9 @@ button {
 
 .menu-nav__title {
   display: block;
-  padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
   width: 139px;
-  height: 48px;
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
@@ -1353,8 +1379,8 @@ button {
 }
 
 .menu-contacts {
-  padding-top: 306px;
-  padding-left: 40px;
+  padding-top: 206px;
+  padding-left: 0px;
 }
 .menu-contacts__contact {
   display: block;
@@ -1367,6 +1393,24 @@ button {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
+  padding-left: 2px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+.menu-contacts__meil {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 40px;
+  font-style: normal;
+  padding-left: 2px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .mobi-net {
@@ -1568,9 +1612,6 @@ button {
   margin-right: 0px;
 }
 
-.section-team {
-  min-width: 480px;
-}
 .section-team__background {
   background-color: var(--primary-background-color);
   padding-top: 33px;
